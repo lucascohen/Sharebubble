@@ -1,0 +1,7 @@
+<h2><%= @bubble.title %></h2>
+<div>
+	<%= @bubble.body %>
+</div>
+<br>
+<%= link_to "Edit", edit_bubble_path(@bubble) %> |
+<%= link_to "Delete", bubble_path(@bubble), method: :delete, data: { confirm: "Are you sure?" } %>

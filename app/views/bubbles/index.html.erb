@@ -1,0 +1,8 @@
+<%= link_to "New Bubble", new_bubble_path %>
+
+<% @bubbles.each do |bubble| %>
+	<h2><%= bubble.title %></h2>
+	<div><%= truncate(bubble.body, :length => 75) %></div>
+	<br>
+	<%= link_to "Read Bubble", bubble %>
+<% end %>
