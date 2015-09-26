@@ -14,6 +14,8 @@
 					<a href="#" class="brand">ShareBubble</a>
 					<ul class="nav">
 						<li><%= link_to "All Bubbles", root_path %></li>
+						<li><%= link_to "New Bubble", new_bubble_path %></li>
+						<li><%= render 'layouts/user_widget' %></li>
 				</div>
 			</div>
 	</div>
@@ -22,6 +24,7 @@
     	<p class="alert"><%= alert %></p>
 
 <%= yield %>
+
 
 </body>
 </html>

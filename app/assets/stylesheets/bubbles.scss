@@ -1,3 +1,17 @@
 // Place all the styles related to the Bubbles controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+.bubble-view.hover {
+	background: #FAFAFA;
+}
+
+.bubble-view.admin {
+	display: none;
+}
+
+.bubble-view.hover .admin {
+	display: inline;
+}

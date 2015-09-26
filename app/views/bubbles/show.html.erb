@@ -1,7 +1,37 @@
-<h2><%= @bubble.title %></h2>
-<div>
+<br>
+<br>
+<div class="bubble-view">
 	<%= @bubble.body %>
 </div>
 <br>
 <%= link_to "Edit", edit_bubble_path(@bubble) %> |
 <%= link_to "Delete", bubble_path(@bubble), method: :delete, data: { confirm: "Are you sure?" } %>
+
+<br>
+<br>
+
+<button type="button" class="btn-info" data-toggle="collapse" data-target="#steps">
+  What now?
+</button>
+ 
+<div id="steps" class="collapse out">
+			<br>
+				<strong>Step 1:</strong> Click "Accept!" and follow the advice in this bubble for the next seven days.
+			<br>
+			<br>
+				<strong>Step 2:</strong> Come back and rate your experience.
+			<br>
+			<br>
+				<strong>Step 3:</strong> Post your own advice bubble!
+</div>
+
+
+<br>
+<div class="btn" data-toggle="popover" title="Awesome!" data-content="Now it's time to test out the advice! Try out the tip for 7 days in a row and then report back here to rate it. Enjoy!">Accept!</div>
+
+
+<script>
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover(); 
+});
+</script>
